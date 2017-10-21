@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="75dp">
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="50dp"
+        android:id="@+id/tx_album"
+        android:layout_alignParentLeft="true"
+        android:text="Album"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="50dp"
+        android:id="@+id/tx_artist"
+        android:layout_toRightOf="@+id/tx_album"
+        android:text="Artista"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="50dp"
+        android:id="@+id/tx_Cancion"
+        android:layout_toRightOf="@+id/tx_artist"
+        android:textSize="15dp"
+        android:text="Cancion"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+
+</RelativeLayout>

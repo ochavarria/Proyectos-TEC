@@ -1,0 +1,114 @@
+ <!DOCTYPE html>  
+ <!-- index.php !-->  
+ <style>
+   .background {
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(147,225,245,1)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#93e1f5', GradientType=1 );
+    font-family: 'Roboto', sans-serif;
+    color: #0073ff;
+  }
+  .btn {
+    background: #0073ff;
+    background-image: -webkit-linear-gradient(top, #0073ff, #4d9cf7);
+    background-image: -moz-linear-gradient(top, #0073ff, #4d9cf7);
+    background-image: -ms-linear-gradient(top, #0073ff, #4d9cf7);
+    background-image: -o-linear-gradient(top, #0073ff, #4d9cf7);
+    background-image: linear-gradient(to bottom, #0073ff, #4d9cf7);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 20px solid #ddd;
+    width: 100%;
+  }
+
+  th, td {
+      text-align: left;
+      padding: 8px;
+  }
+
+  th {
+      background-color: #4d9cf7;
+      color: white;
+  }
+ </style>
+ <html>  
+      <head>  
+           <title>Blue Sky Digital</title>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>  
+           <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      </head>  
+      <body class = "background">  
+           <br /><br />  
+           <div class="container" style="width:500px;">  
+                <div ng-app="myapp" ng-controller="usercontroller">  
+					<h1>Blue Sky </h1>
+
+                     <label>Correo </label>  
+                     <input type="text" name="Correo" ng-model="Correo" class="form-control" />  
+                     <br /> 
+
+                     <label>Contrasena</label>  
+                     <input type="text" name="Contra" ng-model="Contra" class="form-control" />  
+                     <br />                       
+                     <input type="submit" name="btnInsert" class="btn" ng-click="login()" value="Ingresar"/>
+                     
+                	 <input type="submit" name="btnRegistrarse" class="btn" onclick="location.href='main.html';" value="Registrarse"/> 
+                </div>  
+           </div>  
+      </body>  
+ </html>  
+ <script>  
+ var app = angular.module("myapp",[]);  
+ app.controller("usercontroller", function($scope, $http){  
+
+         $scope.login = function (){
+    
+        $scope.Correo;
+        $scope.Contra;
+        $http.post("login.php", { username: $scope.Correo,
+       password: $scope.Contra,
+             }).then(function(response) {
+              alert(response.data);
+            if(response.data == 1){
+                window.location.href = 'estudiante.html?Correo=' +$scope.Correo;
+            }
+            else
+            	if(response.data == 2){
+                	window.location.href = 'profesor.html?Correo='+$scope.Correo;
+            	}
+            	else{alert("Correo o Contrasena invalida");}
+            
+    }, function errorCallback(response) {
+            alert('error');
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+  });
+    }
+ });  
+ </script> 

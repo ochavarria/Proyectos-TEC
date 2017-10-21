@@ -1,0 +1,27 @@
+preOrden
+Codigo= 6 Nivel= 3 Dato= madre
+Codigo= 2 Nivel= 2 Dato= tono
+Codigo= 1 Nivel= 1 Dato= insecto
+Codigo= 5 Nivel= 1 Dato= hostil
+Codigo= 10 Nivel= 2 Dato= utensilio
+Codigo= 9 Nivel= 1 Dato= anuncio
+Codigo= 20 Nivel= 1 Dato= perro
+Codigo= 45 Nivel= 1 Dato= cacota
+inOrden
+Codigo= 1 Nivel= 1 Dato= insecto
+Codigo= 2 Nivel= 2 Dato= tono
+Codigo= 5 Nivel= 1 Dato= hostil
+Codigo= 6 Nivel= 3 Dato= madre
+Codigo= 9 Nivel= 1 Dato= anuncio
+Codigo= 10 Nivel= 2 Dato= utensilio
+Codigo= 20 Nivel= 1 Dato= perro
+Codigo= 45 Nivel= 1 Dato= cacota
+postOrden
+Codigo= 1 Nivel= 1 Dato= insecto
+Codigo= 5 Nivel= 1 Dato= hostil
+Codigo= 2 Nivel= 2 Dato= tono
+Codigo= 9 Nivel= 1 Dato= anuncio
+Codigo= 45 Nivel= 1 Dato= cacota
+Codigo= 20 Nivel= 1 Dato= perro
+Codigo= 10 Nivel= 2 Dato= utensilio
+Codigo= 6 Nivel= 3 Dato= madre

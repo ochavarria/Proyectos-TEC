@@ -1,0 +1,7 @@
+PreOrden
+Clave
+Estudiante= pedro Carnet= 3 - 
+Clave
+Estudiante= pedro Carnet= 1 - Estudiante= jacinto Carnet= 2 - 
+Clave
+Estudiante= anastacia Carnet= 4 - Estudiante= ana Carnet= 5 - Estudiante= petra Carnet= 6 - Estudiante= perinola Carnet= 7 - 

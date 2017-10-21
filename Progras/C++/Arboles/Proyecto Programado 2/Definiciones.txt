@@ -1,0 +1,8 @@
+106;12;1;insecto que roe la madera
+101;12;2;cada uno de los grados de un mismo color
+30;45;5;enemigo
+101;5;6;humana que cuida de los hijos
+27;9;9;titulo de un escrito o de una parte de el
+31;98;10;objeto que se utiliza, para trabajar en diversos oficios
+27;66;15;animal de cuatro patas
+48;15;45;estiercol

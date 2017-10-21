@@ -1,0 +1,27 @@
+preOrden
+Codigo= 6 Color= Negro Dato= humana que cuida de los hijos
+Codigo= 2 Color= Rojo Dato= cada uno de los grados de un mismo color
+Codigo= 1 Color= Negro Dato= insecto que roe la madera
+Codigo= 5 Color= Negro Dato= enemigo
+Codigo= 10 Color= Rojo Dato= objeto que se utiliza, para trabajar en diversos oficios
+Codigo= 9 Color= Negro Dato= titulo de un escrito o de una parte de el
+Codigo= 15 Color= Negro Dato= animal de cuatro patas
+Codigo= 45 Color= Rojo Dato= estiercol
+inOrden
+Codigo= 1 Color= Negro Dato= insecto que roe la madera
+Codigo= 2 Color= Rojo Dato= cada uno de los grados de un mismo color
+Codigo= 5 Color= Negro Dato= enemigo
+Codigo= 6 Color= Negro Dato= humana que cuida de los hijos
+Codigo= 9 Color= Negro Dato= titulo de un escrito o de una parte de el
+Codigo= 10 Color= Rojo Dato= objeto que se utiliza, para trabajar en diversos oficios
+Codigo= 15 Color= Negro Dato= animal de cuatro patas
+Codigo= 45 Color= Rojo Dato= estiercol
+postOrden
+Codigo= 1 Color= Negro Dato= insecto que roe la madera
+Codigo= 5 Color= Negro Dato= enemigo
+Codigo= 2 Color= Rojo Dato= cada uno de los grados de un mismo color
+Codigo= 9 Color= Negro Dato= titulo de un escrito o de una parte de el
+Codigo= 45 Color= Rojo Dato= estiercol
+Codigo= 15 Color= Negro Dato= animal de cuatro patas
+Codigo= 10 Color= Rojo Dato= objeto que se utiliza, para trabajar en diversos oficios
+Codigo= 6 Color= Negro Dato= humana que cuida de los hijos

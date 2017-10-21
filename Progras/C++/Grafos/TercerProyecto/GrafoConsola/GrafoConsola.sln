@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GrafoConsola", "GrafoConsola\GrafoConsola.vcxproj", "{7F33B969-24F1-4FD1-8EC1-348C11AAEE65}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tecdatos2015.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GrafoConsola\\GrafoConsola.vcxproj
+		SccProjectName1 = GrafoConsola
+		SccLocalPath1 = GrafoConsola
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F33B969-24F1-4FD1-8EC1-348C11AAEE65}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7F33B969-24F1-4FD1-8EC1-348C11AAEE65}.Debug|Win32.Build.0 = Debug|Win32
+		{7F33B969-24F1-4FD1-8EC1-348C11AAEE65}.Release|Win32.ActiveCfg = Release|Win32
+		{7F33B969-24F1-4FD1-8EC1-348C11AAEE65}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

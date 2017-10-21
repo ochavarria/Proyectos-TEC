@@ -1,0 +1,159 @@
+ <!DOCTYPE html>  
+ <!-- index.php !-->  
+ <style>
+ .background {
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(147,225,245,1)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#93e1f5', GradientType=1 );
+    font-family: 'Roboto', sans-serif;
+    color: #0073ff;
+  }
+  .btn {
+    background: #0073ff;
+    background-image: -webkit-linear-gradient(top, #0073ff, #4d9cf7);
+    background-image: -moz-linear-gradient(top, #0073ff, #4d9cf7);
+    background-image: -ms-linear-gradient(top, #0073ff, #4d9cf7);
+    background-image: -o-linear-gradient(top, #0073ff, #4d9cf7);
+    background-image: linear-gradient(to bottom, #0073ff, #4d9cf7);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 20px solid #ddd;
+    width: 100%;
+  }
+
+  th, td {
+      text-align: left;
+      padding: 8px;
+  }
+
+  th {
+      background-color: #4d9cf7;
+      color: white;
+  }
+
+   
+ </style>
+ <html>  
+      <head>  
+           <title>Blue Sky Digital</title>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>  
+           <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      </head>  
+      <body class = "background">  
+           <br /><br />  
+           <div class="container" style="width:500px;">  
+                <h3 align="center">Blue Sky Digital</h3>  
+                <div ng-app="myapp" ng-controller="usercontroller">  
+                     <label>Nombre de la asignacion</label>  
+                     <input type="text" name="Nombre" ng-model="Nombre" class="form-control" />  
+                     <br />  
+                     <label>Descripcion de la asignacion</label>  
+                     <input type="text" name="Descrip" ng-model="Descrip" class="form-control" />  
+                     <br /> 
+
+                     <label>Fecha de la asignacion</label>  
+                     <input type="text" name="Fecha" ng-model="Fecha" class="form-control" />  
+                     <br /> 
+
+                     <label>Hora de la asignacion</label>  
+                     <input type="text" name="Hora" ng-model="Hora" class="form-control" />  
+                     <br /> 
+
+                     <label>Medio de entrega la asignacion</label>  
+                     <input type="text" name="Medio" ng-model="Medio" class="form-control" />  
+                     <br />                                                                                                     
+                     <input type="submit" name="btnInsert" class="btn btn-info" ng-click="insertData()" value="Crear Asignacion"/>
+                     <br>
+                     <br>  
+                     <table data-ng-init="init()">
+                        <thead>
+                          <tr>
+                            <th>Nombre</th>
+                            <th>Fecha</th>
+                            <th>  </th>
+                          </tr> 
+                        </thead>
+                        <tbody>
+                          <tr ng-repeat="asignacion_individual in data">
+                              <td>{{asignacion_individual.nombre}}</td>
+                              <td>{{asignacion_individual.fecha}}</td>
+                    		  <td><a href="Calificar.html?Tarea={{asignacion_individual.idAsignacion_Individual}}&Profesor={{profesor}}&Curso={{curso}}">Calificar</a> </td> 
+
+                          </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn btn-info" href="cierre.html?Profesor={{profesor}}&Curso={{curso}}" >Cierre Semestre</a>  
+                </div>  
+           </div>  
+      </body>  
+ </html>  
+ <script>  
+  var parameter= parent.document.URL.substring(parent.document.URL.indexOf('Curso'), parent.document.URL.length)
+  var temp = parameter.split("&");
+
+  var Profesor = unescape(temp[1]);
+  var temp2 = Profesor.split("=");
+  var Profesor = unescape(temp2[1]);
+
+  var Curso = unescape(temp[0]);
+  var temp3 = Curso.split("=");
+  var Curso = unescape(temp3[1]);
+
+
+ var app = angular.module("myapp",[]);  
+ app.controller("usercontroller", function($scope, $http){ 
+ 	$scope.profesor=Profesor;
+ 	$scope.curso=Curso;
+
+      $scope.insertData=function(){
+
+ 		
+
+      $http.post(  
+            "insertAsig.php",{'Curso': Curso, 'Profesor': Profesor,'Nombre':$scope.Nombre,'Descrip':$scope.Descrip
+            ,'Fecha':$scope.Fecha,'Hora':$scope.Hora,'Medio':$scope.Medio }).success(function(data){  
+                alert("Asignacion Creada");  
+                $scope.Correo = null;  
+                $scope.init();
+
+
+           });   
+        }
+
+      $scope.init=function(){
+        $http.post("asignacionesCurso.php",{'Curso':Curso, 'Profesor': Profesor}
+          ).success(function(data){
+
+            $scope.data=data
+
+          })
+      }
+
+ });  
+ </script> 

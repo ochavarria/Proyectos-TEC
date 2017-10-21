@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="delist2.reque.com.delist2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".Principal" />
+        <activity android:name=".Agregar_Sitio_Lista" />
+        <activity android:name=".Registrar_Sitio" />
+        <activity android:name=".Buscar_Sitio" />
+        <activity android:name=".Lista_Compartidas" />
+        <activity android:name=".Listas_Privada" />
+        <activity android:name=".Agregar_Amigos" />
+        <activity android:name=".Agregar_nueva_listaCompartida" />
+        <activity android:name=".Borrar_Lista" />
+        <activity android:name=".Editar_Lista" />
+        <activity android:name=".Borrar_Sitio" />
+        <activity android:name=".Listar_Sitios" />
+        <activity android:name=".GPS"></activity>
+    </application>
+
+</manifest>

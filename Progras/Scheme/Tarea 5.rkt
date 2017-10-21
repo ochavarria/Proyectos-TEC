@@ -1,0 +1,25 @@
+;; Pesos de cada operador ;;
+(define (peso operador)
+  (cond ( (equal? operador '=)    0)
+        ( (equal? operador 'set!) 0)
+        ( (equal? operador '+)    1)
+        ( (equal? operador '-)    1)
+        ( (equal? operador '*)    2)
+        ( (equal? operador '/)    2)
+        ( (equal? operador 'expt) 3)
+        ( else (mensaje "operador no valido: ? en op-peso" operador))))
+;La segunda que nos indica la transformación que se le debe realizar a cada operador:
+(define (código-infix operador)
+  (cond ( (equal? operador '=) 'set!)
+        ( (equal? operador '+) '+)
+        ( (equal? operador '-) '-)
+        ( (equal? operador '*) '*)
+        ( (equal? operador '/) '/)
+        ( (equal? operador 'expt) 'expt)
+        ( else (mensaje "operador no valido: ? en op-code" operador))))
+;; La función de atom? ;;
+(define (atom? x)
+  (not (list? x)))
+;; Determina si algo es un operador válido ;;
+(define (operador? operador)
+  (miembro? operador '(= + - * / expt)))

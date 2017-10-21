@@ -1,0 +1,252 @@
+
+-----------Preorden-------------
+Codigo= 30Factor Balance= 0 Dato= karaoke
+
+-----------inOrden------------- 
+Codigo= 30Factor Balance= 0 Dato= karaoke
+
+-----------postOrden------------- 
+Codigo= 30Factor Balance= 0 Dato= karaoke
+
+-----------Preorden-------------
+Codigo= 63Factor Balance= 0 Dato= orfanato
+
+-----------inOrden------------- 
+Codigo= 63Factor Balance= 0 Dato= orfanato
+
+-----------postOrden------------- 
+Codigo= 63Factor Balance= 0 Dato= orfanato
+
+-----------Preorden-------------
+Codigo= 10Factor Balance= 0 Dato= bazuca
+
+-----------inOrden------------- 
+Codigo= 10Factor Balance= 0 Dato= bazuca
+
+-----------postOrden------------- 
+Codigo= 10Factor Balance= 0 Dato= bazuca
+
+-----------Preorden-------------
+Codigo= 24Factor Balance= 0 Dato= totuga
+
+-----------inOrden------------- 
+Codigo= 24Factor Balance= 0 Dato= totuga
+
+-----------postOrden------------- 
+Codigo= 24Factor Balance= 0 Dato= totuga
+
+-----------Preorden-------------
+Codigo= 11Factor Balance= 0 Dato= dedo
+
+-----------inOrden------------- 
+Codigo= 11Factor Balance= 0 Dato= dedo
+
+-----------postOrden------------- 
+Codigo= 11Factor Balance= 0 Dato= dedo
+
+-----------Preorden-------------
+Codigo= 55Factor Balance= 0 Dato= yellow
+
+-----------inOrden------------- 
+Codigo= 55Factor Balance= 0 Dato= yellow
+
+-----------postOrden------------- 
+Codigo= 55Factor Balance= 0 Dato= yellow
+
+-----------Preorden-------------
+Codigo= 8Factor Balance= 0 Dato= nna
+
+-----------inOrden------------- 
+Codigo= 8Factor Balance= 0 Dato= nna
+
+-----------postOrden------------- 
+Codigo= 8Factor Balance= 0 Dato= nna
+
+-----------Preorden-------------
+Codigo= 47Factor Balance= 0 Dato= waka
+
+-----------inOrden------------- 
+Codigo= 47Factor Balance= 0 Dato= waka
+
+-----------postOrden------------- 
+Codigo= 47Factor Balance= 0 Dato= waka
+
+-----------Preorden-------------
+Codigo= 100Factor Balance= 0 Dato= sal
+
+-----------inOrden------------- 
+Codigo= 100Factor Balance= 0 Dato= sal
+
+-----------postOrden------------- 
+Codigo= 100Factor Balance= 0 Dato= sal
+
+-----------Preorden-------------
+Codigo= 39Factor Balance= 0 Dato= luz
+
+-----------inOrden------------- 
+Codigo= 39Factor Balance= 0 Dato= luz
+
+-----------postOrden------------- 
+Codigo= 39Factor Balance= 0 Dato= luz
+
+-----------Preorden-------------
+Codigo= 17Factor Balance= 0 Dato= ilera
+
+-----------inOrden------------- 
+Codigo= 17Factor Balance= 0 Dato= ilera
+
+-----------postOrden------------- 
+Codigo= 17Factor Balance= 0 Dato= ilera
+
+-----------Preorden-------------
+Codigo= 96Factor Balance= 0 Dato= valvula
+
+-----------inOrden------------- 
+Codigo= 96Factor Balance= 0 Dato= valvula
+
+-----------postOrden------------- 
+Codigo= 96Factor Balance= 0 Dato= valvula
+
+-----------Preorden-------------
+Codigo= 99Factor Balance= 0 Dato= zafari
+
+-----------inOrden------------- 
+Codigo= 99Factor Balance= 0 Dato= zafari
+
+-----------postOrden------------- 
+Codigo= 99Factor Balance= 0 Dato= zafari
+
+-----------Preorden-------------
+Codigo= 9Factor Balance= 1 Dato= rotulo
+Codigo= 66Factor Balance= 0 Dato= rata
+
+-----------inOrden------------- 
+Codigo= 9Factor Balance= 1 Dato= rotulo
+Codigo= 66Factor Balance= 0 Dato= rata
+
+-----------postOrden------------- 
+Codigo= 66Factor Balance= 0 Dato= rata
+Codigo= 9Factor Balance= 1 Dato= rotulo
+
+-----------Preorden-------------
+Codigo= 45Factor Balance= 0 Dato= adverso
+
+-----------inOrden------------- 
+Codigo= 45Factor Balance= 0 Dato= adverso
+
+-----------postOrden------------- 
+Codigo= 45Factor Balance= 0 Dato= adverso
+
+-----------Preorden-------------
+Codigo= 98Factor Balance= 0 Dato= herramienta
+
+-----------inOrden------------- 
+Codigo= 98Factor Balance= 0 Dato= herramienta
+
+-----------postOrden------------- 
+Codigo= 98Factor Balance= 0 Dato= herramienta
+
+-----------Preorden-------------
+Codigo= 22Factor Balance= 0 Dato= jugo
+
+-----------inOrden------------- 
+Codigo= 22Factor Balance= 0 Dato= jugo
+
+-----------postOrden------------- 
+Codigo= 22Factor Balance= 0 Dato= jugo
+
+-----------Preorden-------------
+Codigo= 15Factor Balance= 0 Dato= caca
+
+-----------inOrden------------- 
+Codigo= 15Factor Balance= 0 Dato= caca
+
+-----------postOrden------------- 
+Codigo= 15Factor Balance= 0 Dato= caca
+
+-----------Preorden-------------
+Codigo= 20Factor Balance= 0 Dato= fuego
+
+-----------inOrden------------- 
+Codigo= 20Factor Balance= 0 Dato= fuego
+
+-----------postOrden------------- 
+Codigo= 20Factor Balance= 0 Dato= fuego
+
+-----------Preorden-------------
+Codigo= 7Factor Balance= 0 Dato= nuez
+
+-----------inOrden------------- 
+Codigo= 7Factor Balance= 0 Dato= nuez
+
+-----------postOrden------------- 
+Codigo= 7Factor Balance= 0 Dato= nuez
+
+-----------Preorden-------------
+Codigo= 38Factor Balance= 0 Dato= uva
+
+-----------inOrden------------- 
+Codigo= 38Factor Balance= 0 Dato= uva
+
+-----------postOrden------------- 
+Codigo= 38Factor Balance= 0 Dato= uva
+
+-----------Preorden-------------
+Codigo= 59Factor Balance= 0 Dato= panza
+
+-----------inOrden------------- 
+Codigo= 59Factor Balance= 0 Dato= panza
+
+-----------postOrden------------- 
+Codigo= 59Factor Balance= 0 Dato= panza
+
+-----------Preorden-------------
+Codigo= 16Factor Balance= 0 Dato= elefante
+
+-----------inOrden------------- 
+Codigo= 16Factor Balance= 0 Dato= elefante
+
+-----------postOrden------------- 
+Codigo= 16Factor Balance= 0 Dato= elefante
+
+-----------Preorden-------------
+Codigo= 12Factor Balance= 0 Dato= matiz
+Codigo= 5Factor Balance= 0 Dato= mama
+Codigo= 32Factor Balance= 0 Dato= mariscos
+
+-----------inOrden------------- 
+Codigo= 5Factor Balance= 0 Dato= mama
+Codigo= 12Factor Balance= 0 Dato= matiz
+Codigo= 32Factor Balance= 0 Dato= mariscos
+
+-----------postOrden------------- 
+Codigo= 5Factor Balance= 0 Dato= mama
+Codigo= 32Factor Balance= 0 Dato= mariscos
+Codigo= 12Factor Balance= 0 Dato= matiz
+
+-----------Preorden-------------
+Codigo= 19Factor Balance= 0 Dato= gato
+
+-----------inOrden------------- 
+Codigo= 19Factor Balance= 0 Dato= gato
+
+-----------postOrden------------- 
+Codigo= 19Factor Balance= 0 Dato= gato
+
+-----------Preorden-------------
+Codigo= 78Factor Balance= 0 Dato= quiko
+
+-----------inOrden------------- 
+Codigo= 78Factor Balance= 0 Dato= quiko
+
+-----------postOrden------------- 
+Codigo= 78Factor Balance= 0 Dato= quiko
+
+-----------Preorden-------------
+Codigo= 12Factor Balance= 0 Dato= xilofago
+
+-----------inOrden------------- 
+Codigo= 12Factor Balance= 0 Dato= xilofago
+
+-----------postOrden------------- 
+Codigo= 12Factor Balance= 0 Dato= xilofago

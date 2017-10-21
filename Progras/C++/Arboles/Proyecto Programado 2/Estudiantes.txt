@@ -1,0 +1,7 @@
+1;pedro
+2;jacinto
+3;pedro
+4;anastacia
+5;ana
+6;petra
+7;perinola

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Reconocedor Facial</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	{% load static %}
+	{% static "" as baseUrl %}
+	<link rel="stylesheet" href="{% static 'imageUpload/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+		.content {
+  			min-height: 100%;
+		}
+		.footer {
+  			height: 50px;
+  			margin-top: -50px;
+  			background-color: black;
+  			color:white;
+  			text-align: center;
+		}
+		.content-inside {
+			padding: 0px;
+			padding-bottom: 50px;
+		}
+		.back-color {
+			background-color: black;
+			color: white;
+		}
+
+		.vertical-center{
+			padding: 10%;
+		}
+
+
+	</style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div class="content">
+		<div class="content-inside">
+			<div class="container-fluid" style="min-height:95%; ">
+				<div class="row back-color">
+					  <div class="col-sm-12">
+						  <center>
+						  	<h1>Reconocimiento Facial</h1>
+						  </center>
+					  </div>
+				</div>
+
+				<div class="row ">
+					<div class="col-sm-12">
+						<div class='container-fluid vertical-center'>
+							<center>
+								<img src="{{ baseUrl }}{{imgpath}}" class="responsive-img" style='height:200px;' alt="face" id="imgClickAndChange"/>
+							    <form action="{{ request.build_absolute_uri }}" method="POST" enctype="multipart/form-data">
+							    	{% csrf_token %}
+							        <input type="file" class='file' name="file"/>
+	
+							        <input type="submit" value="Upload File" />
+							    </form>
+							    <h3> {{response}} </h3>
+							</center>
+						</div>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">Instituto Tecnológico de Costa Rica 2017</footer>
+	
+</body>
+<script type="text/javascript">
+</script>
+</html>

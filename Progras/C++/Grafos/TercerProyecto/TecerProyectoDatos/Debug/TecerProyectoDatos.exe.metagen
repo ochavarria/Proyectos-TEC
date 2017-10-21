@@ -1,0 +1,67 @@
+  TecerProyectoDatos.TecerProyecto.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly TecerProyectoDatos, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class VerticeGrafico: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String nombre : Public
+    System.Drawing.Drawing2D.GraphicsPath forma : Public
+    System.Drawing.Color color : Public
+  Methods:
+    añadir(Point[]): PrivateScope, Public, HideBySig
+Class MapaGrafico: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[VerticeGrafico] partes : Public
+    System.Drawing.Graphics areaDeDibujo : Public
+    System.Drawing.SolidBrush pincel : Public
+    System.Drawing.Pen pluma : Public
+  Methods:
+    pintar(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    dibujar(): PrivateScope, Public, HideBySig
+Class PaisGrafico: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 codigo : Public
+    System.Drawing.Point posicion : Public
+    System.Windows.Forms.PictureBox cuadroImagen : Public
+Class ArcoGrafico: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Drawing2D.GraphicsPath forma : Public
+  Methods:
+    crear(Point, Point): PrivateScope, Public, HideBySig
+Class GrafoContinental: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Windows.Forms.Panel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    MapaGrafico mapa : Public
+    Grafo* grafoMapa : Public
+    Grafo* grafoPaises : Public
+    System.Windows.Forms.Panel panel : Public
+    System.Collections.Generic.List`1[PaisGrafico] paises : Public
+    System.Collections.Generic.List`1[ArcoGrafico] arcos : Public
+  Methods:
+    cargarMapa(): PrivateScope, Public, HideBySig
+    cargarConexiones(): PrivateScope, Public, HideBySig
+    cargarSegundaParte(): PrivateScope, Public, HideBySig
+    cargarPaises(): PrivateScope, Public, HideBySig
+    cargarPosicionesPaises(): PrivateScope, Public, HideBySig
+    cargarConexionesPaises(): PrivateScope, Public, HideBySig
+    buscarPais(Int32): PrivateScope, Public, HideBySig
+    colorear(): PrivateScope, Public, HideBySig
+Class TecerProyecto: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

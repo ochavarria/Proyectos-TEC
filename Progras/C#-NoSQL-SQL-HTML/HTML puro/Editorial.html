@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>W3.CSS Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Editorial_files/w3.css">
+<link href="Editorial_files/css.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="Editorial_files/font-awesome.css"><style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif;}
+.w3-sidenav a {padding:16px;}
+</style>
+</head><body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:3;width:320px;" id="mySidenav">
+	  <a href="javascript:void(0)" class="w3-border-bottom w3-large">Autores</a>
+
+	<a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class=" w3-red">Libros</a>
+	<div id="Demo1" class="w3-accordion-content w3-animate-left w3-show">
+		</div>
+		
+	<div class="w3-btn w3-light-grey" style="width:150px;">Nuevo</div>	
+	
+	<div class="w3-btn w3-light-grey" style="width:150px;">Borrar</div>
+	
+	<ul class="w3-ul w3-hoverable" style="overflow: scroll;">
+	  <li class="w3-padding-16">Casa de los espantos</li>
+	  <li class="w3-padding-16">El conde Dracula</li>
+	  <li class="w3-padding-16 w3-red">Las Aventuras de Tintin</li>
+	  <li class="w3-padding-16">Alicia en el pais de las maravillas</li>
+	</ul>
+	  
+	 <a href="javascript:void(0)"><i class="fa fa-check w3-padding-right"></i>Editoriales</a>
+	 <a href="javascript:void(0)"><i class="fa fa-bars w3-padding-right"></i>Clasificacion</a>
+
+
+</nav>
+
+<!-- Modal that pops up when you click on "New Message" -->
+<div id="id01" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+
+    <div class="w3-container w3-padding w3-gray">
+       <span onclick="document.getElementById('id01').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
+    </div>
+      
+
+    <div class="w3-container">
+      <form class="w3-container">
+		<ul class="w3-ul w3-hoverable" style="overflow: scroll;">
+		  <li class="w3-padding-16">Saragoza</li>
+		  <li class="w3-padding-16">Bambi</li>
+		  <li class="w3-padding-16 w3-red">Ediciones Alfaguara</li>
+		  <li class="w3-padding-16">Tiqucia</li>
+		</ul>
+      </form>   
+    </div>
+  </div>
+</div>
+
+<!-- Modal that pops up when you click on "New Message" -->
+<div id="id02" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-padding w3-gray">
+       <span onclick="document.getElementById('id02').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
+    </div>
+   <div class="w3-container">
+      <form class="w3-container">
+        <p>
+        <input class="w3-white w3-input w3-hover-white w3-center-align" style="margin-left:40px; width:30%;" border-style="groove;" placeholder=" Nombre" type="text">
+		<input class="w3-white w3-input w3-hover-white w3-center-align" style="margin-left:40px; width:30%;" border-style="groove;" placeholder=" Ocupacion" type="text">
+		<input class="w3-white w3-input w3-hover-white w3-center-align" style="margin-left:40px; width:30%;" border-style="groove;" placeholder=" Nacionalidad" type="text">
+		</p>
+		
+        <p>
+        <a class="w3-btn w3-light-grey">Agregar </a>
+        </p>
+      </form>   
+    </div>
+  </div>
+</div>
+
+<!-- Modal that pops up when you click on "New Message" -->
+<div id="id03" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+
+    <div class="w3-container w3-padding w3-gray">
+       <span onclick="document.getElementById('id03').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
+    </div>
+      
+
+    <div class="w3-container">
+      <form class="w3-container" action="form.asp">
+        <div class="w3-section">
+          <label><b>Deseas Borrar el autor</b></label>
+          <button class="w3-btn-block w3-green w3-section w3-padding" type="submit">Si</button>
+		  <button class="w3-btn-block w3-green w3-section w3-padding" type="submit">No</button>
+        </div>
+      </form> 
+    </div>
+  </div>
+</div>
+
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
+
+	<!-- Page content -->
+<div class="w3-main" style="margin-left:320px;">
+	<ul class="w3-navbar" style="margin-left:320px;">
+		 <li><a class="w3-padding-16 ">Autor</a></li>
+		 <li><a class="w3-padding-16 w3-red">Libro</a></li>
+		 <li><a class="w3-padding-16 ">Editorial</a></li>
+	</ul>
+
+
+<div id="Borge" class="w3-container person" style="display: block;">
+	<h3 style="margin-left:40px;">Detalle de libro</h3>
+	<div class="w3-row-padding">
+		<h6 class="w3-col s4">Nombre:</h6>
+		<input class="w3-input w3-border w3-margin-left w3-col s4" type="text">
+	</div>	
+	
+	<div class="w3-row-padding">
+		<h6 class="w3-col s4">ISBN:</h6>
+		<input class="w3-input w3-border w3-margin-left w3-col s4" type="text">
+	</div>	
+	
+	<div class="w3-row-padding">
+		<h6 class="w3-col s4">Ano:</h6>
+		<form action="action_page.php" class="w3-col s4">
+		  <input name="quantity" min="1990" max="3000" type="number">
+		</form>
+	</div>	
+	
+	<div class="w3-row-padding">
+		<h6 class="w3-col s4">Edicion:</h6>
+
+		  <li class="w3-dropdown-hover">
+			<a href="#">5 <i class="fa fa-caret-down"></i></a>
+			<div class="w3-dropdown-content w3-white w3-card-4">
+			  <a href="#">4</a>
+			  <a href="#">3</a>
+			  <a href="#">2</a>
+			</div>
+		  </li>
+	</div>	
+	<div class="w3-row-padding">
+		<h6 class="w3-col s4">Editorial:</h6>
+		<h6 class="w3-col s4" style="text-decoration: underline; width:40%;">Ediciones Alfaguara</h6> 
+		<a class="w3-btn " href="javascript:void(0)" onclick="document.getElementById('id01').style.display='block'" style="margin-left:40px; width:20%;" border-style="groove;">Cambiar Editorial </a>
+  
+	</div>	
+	
+		<div class="w3-row-padding">
+		<h6 class="w3-col s4">Autores:</h6>
+		  
+		  <form class="w3-container w3-col s4 ">
+			<ul class="w3-ul w3-hoverable" style="overflow: scroll;">
+			  <li class="w3-padding-16 w3-red">Mark Twain</li>
+			</ul>
+		  </form>  
+		  
+		 <a class="w3-btn " href="javascript:void(0)" onclick="document.getElementById('id02').style.display='block'" style="margin-left:40px; width:20%;" border-style="groove;">Agregar Autor </a>
+		  
+		</div>	
+	
+	<a class="w3-btn " href="javascript:void(0)" onclick="document.getElementById('id03').style.display='block'" style="margin-left:40px; width:20%;" border-style="groove;">Borrar Autor </a>
+	
+   </div>
+</div>
+
+
+
+<script>
+var openInbox = document.getElementById("myBtn");
+openInbox.click();
+
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show"; 
+        x.previousElementSibling.className += " w3-red";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-red", "");
+    }
+}
+
+openMail("Borge")
+function openMail(personName) {
+  var i;
+  var x = document.getElementsByClassName("person");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x = document.getElementsByClassName("test");
+  for (i = 0; i < x.length; i++) {
+     x[i].className = x[i].className.replace(" w3-light-grey", "");
+  }
+  document.getElementById(personName).style.display = "block";
+  event.currentTarget.className += " w3-light-grey";
+}
+</script>
+
+<script>
+var openTab = document.getElementById("firstTab");
+openTab.click();
+</script>
+
+
+ 
+
+</body></html>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de código fuente">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\AdministradorArchivo.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Arco.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Cola.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Conversor.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Grafo.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\InterpreteASCII.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\LectorArchivo.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\ListaSimple.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\NodoLista.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Pila.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Vertice.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\AdministradorArchivo.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Arco.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Cola.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Conexion.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Conversor.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Grafo.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\InterpreteASCII.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\LectorArchivo.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\ListaSimple.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\NodoLista.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Pais.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Pila.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Punto.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Vertice.h">
+      <Filter>Archivos de código fuente</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Conexiones.txt">
+      <Filter>Archivos de código fuente</Filter>
+    </Text>
+    <Text Include="..\..\TecerProyectoDatos\TecerProyectoDatos\Mapa.txt">
+      <Filter>Archivos de código fuente</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

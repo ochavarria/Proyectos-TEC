@@ -1,0 +1,55 @@
+;;A) Reggie Barker 2014050578
+;;   Oscar Chavarria 2014088971
+
+;; B) (mezclar '(1 2 3 4) '(5 6 7 8))
+;;    (1 2 3 4 5 6 7 8)
+
+;; C) (natural '(1 4 2 8 90 32 23) )
+;;     ((1 4) (2 8 90) (32) (23))
+
+;;    (natural '(3 2 1))
+;;     ((3) (2) (1))
+
+;; D) (merge-sort '(67 89 10 12 43 23 12 52 23 02 45))
+;;     (2 10 12 12 23 23 43 45 52 67 89)
+
+;;    (merge-sort '(3 4 5 1 2 3 4 7 3 2 1))
+;;      (1 1 2 2 3 3 3 4 4 5 7)
+
+; Funcion Natural
+( define ( natural lista)
+   (natural-aux (cdr lista) (car lista) '() '()))
+
+( define ( natural-aux lista elemento res res-parcial)
+   (cond ( (null? lista)
+           (reverse (cons (reverse (cons elemento res-parcial)) res)))
+           ( (<= elemento (car lista))
+           (natural-aux (cdr lista) (car lista) res (cons elemento res-parcial)))
+           (else 
+            (natural-aux (cdr lista) (car lista) (cons (reverse (cons elemento res-parcial)) res) '()))))
+            
+
+;Funcion mezclar  
+(define (mezclar lista-uno lista-dos)
+  (mezclar-aux lista-uno lista-dos '()))
+
+(define (mezclar-aux lista-uno lista-dos res)
+  (cond ( (null? lista-uno)
+          (append res lista-dos))
+        ( ( null? lista-dos)
+          (append res lista-uno))
+        ( (< (car lista-uno) (car lista-dos))
+          (mezclar-aux (cdr lista-uno) lista-dos (append res (cons (car lista-uno) '()))))
+        (else
+         (mezclar-aux lista-uno (cdr lista-dos) (append res (cons (car lista-dos) '()))))))
+
+;Funcion Merge-sort
+(define (merge-sort lista)
+  (let (( lista-natural (natural lista)))
+    (merge-sort-aux (car lista-natural) (cdr lista-natural))))
+   
+(define (merge-sort-aux res lista-natural)
+  (cond ( (null? lista-natural)
+          res)
+        (else
+        (merge-sort-aux (mezclar res (car lista-natural)) (cdr lista-natural)))))

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de código fuente">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de código fuente\FileManager">
+      <UniqueIdentifier>{9ced874f-01dc-4661-b636-6a03143f7931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\Estructuras">
+      <UniqueIdentifier>{0844e896-778b-480a-88ef-75223355645a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Constantes.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Conversor.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Evaluador.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Principal.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Archivo.cpp">
+      <Filter>Archivos de código fuente\FileManager</Filter>
+    </ClCompile>
+    <ClCompile Include="InterpreteASCII.cpp">
+      <Filter>Archivos de código fuente\FileManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LectorArchivo.cpp">
+      <Filter>Archivos de código fuente\FileManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Cola.cpp">
+      <Filter>Archivos de código fuente\Estructuras</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaSimple.cpp">
+      <Filter>Archivos de código fuente\Estructuras</Filter>
+    </ClCompile>
+    <ClCompile Include="Pila.cpp">
+      <Filter>Archivos de código fuente\Estructuras</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodo.cpp">
+      <Filter>Archivos de código fuente\Estructuras</Filter>
+    </ClCompile>
+    <ClCompile Include="ManejadorArchivo.cpp">
+      <Filter>Archivos de código fuente\FileManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+106;12;1;insecto
+101;12;2;tono
+30;45;5;hostil
+101;5;6;madre
+27;9;9;anuncio
+31;98;10;utensilio
+27;66;20;perro
+48;15;45;cacota

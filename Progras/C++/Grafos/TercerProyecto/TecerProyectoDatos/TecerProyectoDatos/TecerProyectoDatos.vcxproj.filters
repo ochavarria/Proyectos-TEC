@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de código fuente">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de código fuente\LecturaMapa">
+      <UniqueIdentifier>{fa57e8d8-1be1-49b9-b20b-c7bc0735d983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\LecturaMapa">
+      <UniqueIdentifier>{f083672f-c831-427c-b390-c4a8b1ae5212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Grafo">
+      <UniqueIdentifier>{92f0ac8c-e043-4d24-be55-dab0028219d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\Grafo">
+      <UniqueIdentifier>{46fb67fe-23b4-4b10-8403-90c2b0833f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\GUI">
+      <UniqueIdentifier>{d5892323-1fea-4860-b52b-e57daf9ded15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TecerProyecto.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="AdministradorArchivo.cpp">
+      <Filter>Archivos de código fuente\LecturaMapa</Filter>
+    </ClCompile>
+    <ClCompile Include="Conversor.cpp">
+      <Filter>Archivos de código fuente\LecturaMapa</Filter>
+    </ClCompile>
+    <ClCompile Include="InterpreteASCII.cpp">
+      <Filter>Archivos de código fuente\LecturaMapa</Filter>
+    </ClCompile>
+    <ClCompile Include="LectorArchivo.cpp">
+      <Filter>Archivos de código fuente\LecturaMapa</Filter>
+    </ClCompile>
+    <ClCompile Include="Arco.cpp">
+      <Filter>Archivos de código fuente\Grafo</Filter>
+    </ClCompile>
+    <ClCompile Include="Cola.cpp">
+      <Filter>Archivos de código fuente\Grafo</Filter>
+    </ClCompile>
+    <ClCompile Include="Grafo.cpp">
+      <Filter>Archivos de código fuente\Grafo</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaSimple.cpp">
+      <Filter>Archivos de código fuente\Grafo</Filter>
+    </ClCompile>
+    <ClCompile Include="NodoLista.cpp">
+      <Filter>Archivos de código fuente\Grafo</Filter>
+    </ClCompile>
+    <ClCompile Include="Pila.cpp">
+      <Filter>Archivos de código fuente\Grafo</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertice.cpp">
+      <Filter>Archivos de código fuente\Grafo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LecturaMapa\LecturaMapa\EscritorArchivo.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TecerProyecto.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="AdministradorArchivo.h">
+      <Filter>Archivos de encabezado\LecturaMapa</Filter>
+    </ClInclude>
+    <ClInclude Include="Conversor.h">
+      <Filter>Archivos de encabezado\LecturaMapa</Filter>
+    </ClInclude>
+    <ClInclude Include="InterpreteASCII.h">
+      <Filter>Archivos de encabezado\LecturaMapa</Filter>
+    </ClInclude>
+    <ClInclude Include="LectorArchivo.h">
+      <Filter>Archivos de encabezado\LecturaMapa</Filter>
+    </ClInclude>
+    <ClInclude Include="Punto.h">
+      <Filter>Archivos de encabezado\LecturaMapa</Filter>
+    </ClInclude>
+    <ClInclude Include="Pais.h">
+      <Filter>Archivos de encabezado\LecturaMapa</Filter>
+    </ClInclude>
+    <ClInclude Include="Conexion.h">
+      <Filter>Archivos de encabezado\LecturaMapa</Filter>
+    </ClInclude>
+    <ClInclude Include="Arco.h">
+      <Filter>Archivos de encabezado\Grafo</Filter>
+    </ClInclude>
+    <ClInclude Include="Cola.h">
+      <Filter>Archivos de encabezado\Grafo</Filter>
+    </ClInclude>
+    <ClInclude Include="Grafo.h">
+      <Filter>Archivos de encabezado\Grafo</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertice.h">
+      <Filter>Archivos de encabezado\Grafo</Filter>
+    </ClInclude>
+    <ClInclude Include="Pila.h">
+      <Filter>Archivos de encabezado\Grafo</Filter>
+    </ClInclude>
+    <ClInclude Include="NodoLista.h">
+      <Filter>Archivos de encabezado\Grafo</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaSimple.h">
+      <Filter>Archivos de encabezado\Grafo</Filter>
+    </ClInclude>
+    <ClInclude Include="GrafoContinental.h">
+      <Filter>Archivos de encabezado\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MapaGrafico.h">
+      <Filter>Archivos de encabezado\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticeGrafico.h">
+      <Filter>Archivos de encabezado\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PaisGrafico.h">
+      <Filter>Archivos de encabezado\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ArcoGrafico.h">
+      <Filter>Archivos de encabezado\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LecturaMapa\LecturaMapa\EscritorArchivo.h">
+      <Filter>Archivos de encabezado\LecturaMapa</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TecerProyecto.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Mapa.txt" />
+    <Text Include="Conexiones.txt" />
+  </ItemGroup>
+</Project>

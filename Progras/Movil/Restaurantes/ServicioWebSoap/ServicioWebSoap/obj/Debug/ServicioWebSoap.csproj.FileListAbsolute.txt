@@ -1,0 +1,6 @@
+C:\Users\Gollo\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\bin\ServicioWebSoap.dll.config
+C:\Users\Gollo\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\bin\ServicioWebSoap.dll
+C:\Users\Gollo\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\bin\ServicioWebSoap.pdb
+C:\Users\Gollo\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\obj\Debug\ServicioWebSoap.csprojResolveAssemblyReference.cache
+C:\Users\Gollo\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\obj\Debug\ServicioWebSoap.dll
+C:\Users\Gollo\documents\visual studio 2013\Projects\ServicioWebSoap\ServicioWebSoap\obj\Debug\ServicioWebSoap.pdb

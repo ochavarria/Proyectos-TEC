@@ -1,0 +1,32 @@
+
+Pasando por k
+Datos no coinciden 
+Pasando por j
+Datos no coinciden 
+Pasando por c
+Dato encontrado
+Busqueda de la letra c
+Pasando por caca
+Dato encontrado
+Pasando por k
+Datos no coinciden 
+Pasando por j
+Datos no coinciden 
+Pasando por c
+Dato encontrado
+Busqueda de la letra c
+Pasando por caca
+Dato encontrado
+Pasando por k
+Datos no coinciden 
+Pasando por o
+Datos no coinciden 
+Pasando por i
+Datos no coinciden 
+Pasando por v
+Datos no coinciden 
+Pasando por r
+Dato encontrado
+Busqueda de la letra r
+Pasando por rotulo
+Dato encontrado

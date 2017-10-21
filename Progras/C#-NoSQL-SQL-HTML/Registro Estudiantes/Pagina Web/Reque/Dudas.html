@@ -1,0 +1,146 @@
+<style>
+	a {
+	    float: left;
+	    margin: 3px 3px 0px 3px;
+	    padding: 5px 5px 0px 5px;
+
+	}
+	.Desc {
+		height: 300px;
+		width: 300px;
+	}
+	.background {
+		background: rgba(255,255,255,1);
+		background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(147,225,245,1)));
+		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+		background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+		background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(147,225,245,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#93e1f5', GradientType=1 );
+		font-family: 'Roboto', sans-serif;
+		color: #0073ff;
+	}
+	.btn {
+	  background: #0073ff;
+	  background-image: -webkit-linear-gradient(top, #0073ff, #4d9cf7);
+	  background-image: -moz-linear-gradient(top, #0073ff, #4d9cf7);
+	  background-image: -ms-linear-gradient(top, #0073ff, #4d9cf7);
+	  background-image: -o-linear-gradient(top, #0073ff, #4d9cf7);
+	  background-image: linear-gradient(to bottom, #0073ff, #4d9cf7);
+	  -webkit-border-radius: 28;
+	  -moz-border-radius: 28;
+	  border-radius: 28px;
+	  font-family: 'Roboto', sans-serif;
+	  color: #ffffff;
+	  font-size: 28px;
+	  padding: 10px 20px 10px 20px;
+	  text-decoration: none;
+	}
+
+.btn:hover {
+	  background: #3cb0fd;
+	  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	  text-decoration: none;
+	}
+	table {
+	    border: 20px solid #ddd;
+	    border-collapse: collapse;
+    	width: 100%;
+	    
+	}
+	td, th {
+
+		border:5px solid #fff;
+	}
+	th, td {
+    padding: 15px;
+	}
+</style>
+	<head>  
+       <title>Blue Sky Digital</title>  
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>  
+         <meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+ 	</head>
+ 	<body class= "background">
+			<div ng-app="DudasApp">
+
+			    <div id="tabs" ng-controller="DudasCtrl" data-ng-init="init()">
+			    	<h5><p class="text-right text-primary">Correo: {{correo}}</p></h5>
+			    	<h2>Creacion de Duda de un Estudiante</h2>
+			    	<table>
+						<tr>
+							<td>
+							<b>Curso: </b>
+							</td>
+							<td>
+							{{curso}}	
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<b>Descripcion: </b>
+							</td>
+							<td>
+							<textarea class="Desc" name="Desc" ng-model="Desc">
+							</textarea>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="submit" name="btnCrear" class="btn" ng-click="submit()" value="Crear Nueva Duda"/></td>
+						</tr>
+					</table>
+				    
+			    </div>
+			</div>
+	</body>
+</html>
+
+<script>  
+	var parameter= parent.document.URL.substring(parent.document.URL.indexOf('Correo'), parent.document.URL.length)
+	var temp = parameter.split("=");
+    var p = unescape(temp[1]);
+    var parameter2= parent.document.URL.substring(parent.document.URL.indexOf('Curso'), parent.document.URL.length)
+	var temp2 = parameter2.split("=");
+    var parameter3 = unescape(temp2[1]);
+    var temp3 = parameter3.split("&");
+    var q = unescape(temp3[0]); 
+    var Indata = {'Correo': p , 'Curso' : q};
+
+	angular.module('DudasApp', [])
+	.controller('DudasCtrl',function($scope, $http) {
+
+
+	      $scope.init=function(){
+
+
+		    $scope.correo=p;
+		    $scope.curso=q;
+	      }
+
+	      $scope.submit=function(){
+	      	$http.post(  
+                "Dudas.php",
+                {'Correo': p , "Curso" : q , "Descripcion":$scope.Desc}
+                ).success(function(data){
+	      			alert("Consulta Creada");
+	      			$scope.Desc = null;
+
+
+	      		});
+            }
+        })
+
+ </script>

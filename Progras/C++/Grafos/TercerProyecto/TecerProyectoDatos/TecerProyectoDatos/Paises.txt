@@ -1,0 +1,19 @@
+276,Alemania
+040,Austria
+100,Bulgaria
+703,Eslovaquia
+724,España
+233,Estonia
+246,Finlandia
+250,Francia
+348,Hungria
+380,Italia
+428,Letonia
+578,Noruega
+616,Polonia
+620,Portugal
+826,Reino Unido
+643,Rusia
+688,Serbia
+752,Suecia
+804,Ucrania

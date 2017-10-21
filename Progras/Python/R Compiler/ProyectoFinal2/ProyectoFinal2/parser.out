@@ -1,0 +1,197 @@
+Created by PLY version 3.10 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    COS
+    LOG
+    ATAN
+    EXP
+    PRINT
+    LOG10
+    TOLOWER
+    TRUE
+    NS_GET_INT
+    TOUPPER
+    END
+    TAN
+    FLOOR
+    PERIOD
+    ABS
+    TOSTRING
+    RBB
+    FALSE
+    FACTORIAL
+    LIST
+    SQRT
+
+Grammar
+
+Rule 0     S' -> prog
+Rule 1     prog -> END_OF_INPUT
+Rule 2     prog -> newline
+Rule 3     prog -> expr_or_assign newline
+Rule 4     prog -> expr_or_assign SEMI
+Rule 5     expr_or_assign -> expr
+Rule 6     expr_or_assign -> equal_assign
+Rule 7     equal_assign -> expr EQ_ASSIGN expr_or_assign
+Rule 8     expr -> NUM_CONST
+Rule 9     expr -> STR_CONST
+Rule 10    expr -> NULL_CONST
+Rule 11    expr -> SYMBOL
+Rule 12    expr -> LBRACE exprlist RBRACE
+Rule 13    expr -> LPAREN expr_or_assign RPAREN
+Rule 14    expr -> expr COLON expr
+Rule 15    expr -> expr PLUS expr
+Rule 16    expr -> expr MINUS expr
+Rule 17    expr -> expr TIMES expr
+Rule 18    expr -> expr DIVIDE expr
+Rule 19    expr -> expr XOR expr
+Rule 20    expr -> expr ESPECIAL exp
+Rule 21    expr -> expr MODULO expr
+Rule 22    expr -> expr ENNE expr
+Rule 23    expr -> expr TERNARY expr
+Rule 24    expr -> expr LT expr
+Rule 25    expr -> expr LE expr
+Rule 26    expr -> expr EQ expr
+Rule 27    expr -> expr NE expr
+Rule 28    expr -> expr GE expr
+Rule 29    expr -> expr GT expr
+Rule 30    expr -> expr AND expr
+Rule 31    expr -> expr OR expr
+Rule 32    expr -> expr AND2 expr
+Rule 33    expr -> expr OR2 expr
+Rule 34    expr -> expr LEFT_ASSIGN expr
+Rule 35    expr -> expr RIGHT_ASSIGN expr
+Rule 36    expr -> FUNCTION LPAREN formlist RPAREN cr expr_or_assign
+Rule 37    expr -> expr LPAREN sublist RPAREN
+Rule 38    expr -> IF ifcond expr_or_assign
+Rule 39    expr -> IF ifcond expr_or_assign ELSE expr_or_assign
+Rule 40    expr -> FOR forcond expr_or_assign
+Rule 41    expr -> WHILE cond expr_or_assign
+Rule 42    expr -> REPEAT expr_or_assign
+Rule 43    expr -> expr LBB sublist RBRACKET RBRACKET
+Rule 44    expr -> expr LBRACKET sublist RBRACKET
+Rule 45    expr -> SYMBOL NS_GET SYMBOL
+Rule 46    expr -> SYMBOL NS_GET STR_CONST
+Rule 47    expr -> STR_CONST NS_GET SYMBOL
+Rule 48    expr -> STR_CONST NS_GET STR_CONST
+Rule 49    expr -> expr DOLLAR SYMBOL
+Rule 50    expr -> expr DOLLAR STR_CONST
+Rule 51    expr -> expr ARROBA SYMBOL
+Rule 52    expr -> expr ARROBA STR_CONST
+Rule 53    expr -> NEXT
+Rule 54    expr -> BREAK
+Rule 55    cond -> LPAREN expr RPAREN
+Rule 56    ifcond -> LPAREN expr RPAREN
+Rule 57    forcond -> LPAREN SYMBOL IN expr RPAREN
+Rule 58    exprlist -> expr_or_assign
+Rule 59    exprlist -> exprlist SEMI expr_or_assign
+Rule 60    exprlist -> exprlist SEMI
+Rule 61    exprlist -> exprlist newline expr_or_assign
+Rule 62    exprlist -> exprlist newline
+Rule 63    sublist -> sub
+Rule 64    sublist -> sublist cr COMMA sub
+Rule 65    sub -> expr
+Rule 66    sub -> SYMBOL EQ_ASSIGN
+Rule 67    sub -> SYMBOL EQ_ASSIGN expr
+Rule 68    sub -> STR_CONST EQ_ASSIGN
+Rule 69    sub -> STR_CONST EQ_ASSIGN expr
+Rule 70    sub -> NULL_CONST EQ_ASSIGN
+Rule 71    sub -> NULL_CONST EQ_ASSIGN expr
+Rule 72    formlist -> SYMBOL
+Rule 73    formlist -> SYMBOL EQ_ASSIGN expr
+Rule 74    formlist -> formlist COMMA SYMBOL
+Rule 75    formlist -> formlist COMMA SYMBOL EQ_ASSIGN expr
+Rule 76    cr -> <empty>
+
+Terminals, with rules where they appear
+
+ABS                  : 
+AND                  : 30
+AND2                 : 32
+ARROBA               : 51 52
+ATAN                 : 
+BREAK                : 54
+COLON                : 14
+COMMA                : 64 74 75
+COS                  : 
+DIVIDE               : 18
+DOLLAR               : 49 50
+ELSE                 : 39
+END                  : 
+END_OF_INPUT         : 1
+ENNE                 : 22
+EQ                   : 26
+EQ_ASSIGN            : 7 66 67 68 69 70 71 73 75
+EXP                  : 
+FACTORIAL            : 
+FALSE                : 
+FLOOR                : 
+FOR                  : 40
+FUNCTION             : 36
+GE                   : 28
+GT                   : 29
+IF                   : 38 39
+IN                   : 57
+LBB                  : 43
+LBRACE               : 12
+LBRACKET             : 44
+LE                   : 25
+LEFT_ASSIGN          : 34
+LIST                 : 
+LOG                  : 
+LOG10                : 
+LPAREN               : 13 36 37 55 56 57
+LT                   : 24
+MINUS                : 16
+MODULO               : 21
+NE                   : 27
+NEXT                 : 53
+NS_GET               : 45 46 47 48
+NS_GET_INT           : 
+NULL_CONST           : 10 70 71
+NUM_CONST            : 8
+OR                   : 31
+OR2                  : 33
+PERIOD               : 
+PLUS                 : 15
+PRINT                : 
+RBB                  : 
+RBRACE               : 12
+RBRACKET             : 43 43 44
+REPEAT               : 42
+RIGHT_ASSIGN         : 35
+RPAREN               : 13 36 37 55 56 57
+SEMI                 : 4 59 60
+SQRT                 : 
+STR_CONST            : 9 46 47 48 48 50 52 68 69
+SYMBOL               : 11 45 45 46 47 49 51 57 66 67 72 73 74 75
+TAN                  : 
+TERNARY              : 23
+TIMES                : 17
+TOLOWER              : 
+TOSTRING             : 
+TOUPPER              : 
+TRUE                 : 
+WHILE                : 41
+XOR                  : 19
+error                : 
+
+Nonterminals, with rules where they appear
+
+ESPECIAL             : 20
+cond                 : 41
+cr                   : 36 64
+equal_assign         : 6
+exp                  : 20
+expr                 : 5 7 14 14 15 15 16 16 17 17 18 18 19 19 20 21 21 22 22 23 23 24 24 25 25 26 26 27 27 28 28 29 29 30 30 31 31 32 32 33 33 34 34 35 35 37 43 44 49 50 51 52 55 56 57 65 67 69 71 73 75
+expr_or_assign       : 3 4 7 13 36 38 39 39 40 41 42 58 59 61
+exprlist             : 12 59 60 61 62
+forcond              : 40
+formlist             : 36 74 75
+ifcond               : 38 39
+newline              : 2 3 61 62
+prog                 : 0
+sub                  : 63 64
+sublist              : 37 43 44 64
+

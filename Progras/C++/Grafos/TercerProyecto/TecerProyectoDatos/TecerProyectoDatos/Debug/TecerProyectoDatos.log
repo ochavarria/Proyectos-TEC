@@ -1,0 +1,44 @@
+﻿Build started 16/06/2015 06:14:04 a.m..
+     1>Project "C:\Users\Chavas\Source\Workspaces\Workspace\TercerProyecto\TecerProyectoDatos\TecerProyectoDatos\TecerProyectoDatos.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib ..\..\LecturaMapa\LecturaMapa\EscritorArchivo.cpp AdministradorArchivo.cpp Arco.cpp Cola.cpp Conversor.cpp Grafo.cpp InterpreteASCII.cpp LectorArchivo.cpp ListaSimple.cpp NodoLista.cpp Pila.cpp Source.cpp Vertice.cpp
+         EscritorArchivo.cpp
+         AdministradorArchivo.cpp
+         Arco.cpp
+         Cola.cpp
+         Conversor.cpp
+         Grafo.cpp
+         InterpreteASCII.cpp
+         LectorArchivo.cpp
+     1>LectorArchivo.cpp(53): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>LectorArchivo.cpp(54): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         ListaSimple.cpp
+         NodoLista.cpp
+         Pila.cpp
+         Source.cpp
+         Vertice.cpp
+         Generating Code...
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib TecerProyecto.cpp
+         TecerProyecto.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Chavas\Source\Workspaces\Workspace\TercerProyecto\TecerProyectoDatos\Debug\TecerProyectoDatos.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Debug\TecerProyectoDatos.TecerProyecto.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Chavas\Source\Workspaces\Workspace\TercerProyecto\TecerProyectoDatos\Debug\TecerProyectoDatos.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\EscritorArchivo.obj
+         Debug\AdministradorArchivo.obj
+         Debug\Arco.obj
+         Debug\Cola.obj
+         Debug\Conversor.obj
+         Debug\Grafo.obj
+         Debug\InterpreteASCII.obj
+         Debug\LectorArchivo.obj
+         Debug\ListaSimple.obj
+         Debug\NodoLista.obj
+         Debug\Pila.obj
+         Debug\Source.obj
+         Debug\TecerProyecto.obj
+         Debug\Vertice.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         TecerProyectoDatos.vcxproj -> C:\Users\Chavas\Source\Workspaces\Workspace\TercerProyecto\TecerProyectoDatos\Debug\TecerProyectoDatos.exe
+     1>Done Building Project "C:\Users\Chavas\Source\Workspaces\Workspace\TercerProyecto\TecerProyectoDatos\TecerProyectoDatos\TecerProyectoDatos.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.47

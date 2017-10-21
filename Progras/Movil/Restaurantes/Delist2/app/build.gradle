@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+    repositories {
+        mavenCentral()
+    }
+    repositories {
+        mavenCentral()
+
+        maven {
+            url 'http://ksoap2-android.googlecode.com/svn/m2-repo'
+        }
+    }
+
+
+    defaultConfig {
+        applicationId "delist2.reque.com.delist2"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.15.0'
+    compile 'com.google.android.gms:play-services-location:9.4.0'
+    compile files('libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+}
+
